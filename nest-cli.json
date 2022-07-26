@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "apps/solness/src",
+  "monorepo": true,
+  "root": "apps/solness",
+  "compilerOptions": {
+    "webpack": false,
+    "tsConfigPath": "apps/solness/tsconfig.app.json"
+  },
+  "projects": {
+    "solness": {
+      "type": "application",
+      "root": "apps/solness",
+      "entryFile": "main",
+      "sourceRoot": "apps/solness/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/solness/tsconfig.app.json"
+      }
+    },
+    "auth": {
+      "type": "library",
+      "root": "libs/auth",
+      "entryFile": "index",
+      "sourceRoot": "libs/auth/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/auth/tsconfig.lib.json"
+      }
+    },
+    "core": {
+      "type": "library",
+      "root": "libs/core",
+      "entryFile": "index",
+      "sourceRoot": "libs/core/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/core/tsconfig.lib.json"
+      }
+    },
+    "email": {
+      "type": "library",
+      "root": "libs/email",
+      "entryFile": "index",
+      "sourceRoot": "libs/email/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/email/tsconfig.lib.json"
+      }
+    },
+    "user": {
+      "type": "library",
+      "root": "libs/user",
+      "entryFile": "index",
+      "sourceRoot": "libs/user/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/user/tsconfig.lib.json"
+      }
+    },
+    "data-loader": {
+      "type": "library",
+      "root": "libs/data-loader",
+      "entryFile": "index",
+      "sourceRoot": "libs/data-loader/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/data-loader/tsconfig.lib.json"
+      }
+    },
+    "company": {
+      "type": "library",
+      "root": "libs/company",
+      "entryFile": "index",
+      "sourceRoot": "libs/company/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/company/tsconfig.lib.json"
+      }
+    },
+    "viewer": {
+      "type": "library",
+      "root": "libs/viewer",
+      "entryFile": "index",
+      "sourceRoot": "libs/viewer/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/viewer/tsconfig.lib.json"
+      }
+    },
+    "cash-register": {
+      "type": "library",
+      "root": "libs/cash-register",
+      "entryFile": "index",
+      "sourceRoot": "libs/cash-register/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/cash-register/tsconfig.lib.json"
+      }
+    },
+    "custom-repository": {
+      "type": "library",
+      "root": "libs/custom-repository",
+      "entryFile": "index",
+      "sourceRoot": "libs/custom-repository/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/custom-repository/tsconfig.lib.json"
+      }
+    }
+  }
+}

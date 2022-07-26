@@ -1,0 +1,41 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@solness/auth": ["libs/auth/src"],
+      "@solness/auth/*": ["libs/auth/src/*"],
+      "@solness/cash-register": ["libs/cash-register/src"],
+      "@solness/cash-register/*": ["libs/cash-register/src/*"],
+      "@solness/company": ["libs/company/src"],
+      "@solness/company/*": ["libs/company/src/*"],
+      "@solness/core": ["libs/core/src"],
+      "@solness/core/*": ["libs/core/src/*"],
+      "@solness/custom-repository": ["libs/custom-repository/src"],
+      "@solness/custom-repository/*": ["libs/custom-repository/src/*"],
+      "@solness/data-loader": ["libs/data-loader/src"],
+      "@solness/data-loader/*": ["libs/data-loader/src/*"],
+      "@solness/email": ["libs/email/src"],
+      "@solness/email/*": ["libs/email/src/*"],
+      "@solness/user": ["libs/user/src"],
+      "@solness/user/*": ["libs/user/src/*"],
+      "@solness/viewer": ["libs/viewer/src"],
+      "@solness/viewer/*": ["libs/viewer/src/*"]
+    }
+  }
+}
